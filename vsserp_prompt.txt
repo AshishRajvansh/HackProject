@@ -5,8 +5,6 @@ Special rules for query generation:
 
 If the image contains a boarding pass and the top intent is Travel, extract the flight number and use it as the serp_query for the Travel intent.
 
-If the image contains a famous place, location, or monument (e.g. Maldives, Taj Mahal), return Travel as the intent and use the name of that place as the serp_query.
-
 If the image contains any disease reference, use the disease name only (e.g. dementia) as the serp_query for the Health intent.
 
 If the image depicts a sport (e.g. football, tennis), use the sport name or event as the serp_query for the Sport intent.
