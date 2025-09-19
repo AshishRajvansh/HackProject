@@ -22,9 +22,13 @@ If the image relates to entertainment (e.g. movies, concerts), use the name of t
 Output format:
 
 [
-  {"Intent": "Places", "confidence": 0.50, "serp_query": "Maldives Place"},
-  {"Intent": "Travel", "confidence": 0.30, "serp_query": "AI123 flight"},
-  {"Intent": "Food", "confidence": 0.20, "serp_query": "Italian food"}
+  {"Intent": "Places", "confidence": 0.30, "serp_query": "Maldives Place"},
+  {"Intent": "Travel", "confidence": 0.20, "serp_query": "AI123 flight"},
+  {"Intent": "Food", "confidence": 0.15, "serp_query": "Italian food"},
+  {"Intent": "Shopping", "confidence": 0.10, "serp_query": "iPhone14 buy"},
+  {"Intent": "Health", "confidence": 0.10, "serp_query": "dementia"},
+  {"Intent": "Sport", "confidence": 0.10, "serp_query": "football"},
+  {"Intent": "Entertainment", "confidence": 0.05, "serp_query": "Taylor Swift concert"}
 ]
 
 
