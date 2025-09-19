@@ -5,11 +5,7 @@ Special rules for query generation:
 
 If the image contains a boarding pass and the top intent is Travel, extract the flight number and use it as the serp_query for the Travel intent.
 
-If the image contains a famous place, location, or monument:
-
-For monuments (e.g. Taj Mahal, Eiffel Tower), return Places as the intent and use the monument name only as the serp_query.
-
-For locations (e.g. Maldives, Switzerland), return Places as the intent and add the word “Place” as a postfix in the serp_query (e.g. "Maldives Place").
+If the image contains a famous place, location, or monument (e.g. Maldives, Taj Mahal), return Travel as the intent and use the name of that place as the serp_query.
 
 If the image contains any disease reference, use the disease name only (e.g. dementia) as the serp_query for the Health intent.
 
@@ -22,13 +18,12 @@ If the image relates to entertainment (e.g. movies, concerts), use the name of t
 Output format:
 
 [
-  {"Intent": "Places", "confidence": 0.30, "serp_query": "Maldives Place"},
-  {"Intent": "Travel", "confidence": 0.20, "serp_query": "AI123 flight"},
-  {"Intent": "Food", "confidence": 0.15, "serp_query": "Italian food"},
-  {"Intent": "Shopping", "confidence": 0.10, "serp_query": "iPhone14 buy"},
+  {"Intent": "Travel", "confidence": 0.35, "serp_query": "Maldives"},
+  {"Intent": "Food", "confidence": 0.20, "serp_query": "Italian food"},
+  {"Intent": "Shopping", "confidence": 0.15, "serp_query": "iPhone14 buy"},
   {"Intent": "Health", "confidence": 0.10, "serp_query": "dementia"},
   {"Intent": "Sport", "confidence": 0.10, "serp_query": "football"},
-  {"Intent": "Entertainment", "confidence": 0.05, "serp_query": "Taylor Swift concert"}
+  {"Intent": "Entertainment", "confidence": 0.10, "serp_query": "Taylor Swift concert"}
 ]
 
 
@@ -45,8 +40,6 @@ Sport
 Food
 
 Entertainment
-
-Places
 
 Use visual cues such as objects, people, settings, and activities to infer intent.
 Confidence scores must be normalized so that the sum of all scores equals 1.
