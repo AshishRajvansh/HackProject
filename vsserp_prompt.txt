@@ -3,7 +3,7 @@ I will upload an image, and your task is to analyse it and return a JSON array o
 
 Special rules for query generation:
 If the image contains a boarding pass and the top intent is Travel, extract the flight number and use it as the serp_query for the Travel intent.
-If the image contains a famous place or monument (e.g. Taj Mahal), return Place as the intent and use the name of that place as the serp_query.
+If the image contains a famous place or monument (e.g. Taj Mahal), return Places as the intent and use the name of that place as the serp_query.
 If the image contains any disease reference, use the disease name only (e.g. dementia) as the serp_query for the Health intent.
 If the image depicts a sport (e.g. football, tennis), use the sport name or event as the serp_query for the Sport intent.
 If the image shows food or dining, use a relevant dish or cuisine name (e.g. sushi, Italian food) as the serp_query for the Food intent.
@@ -24,7 +24,7 @@ Travel
 Sport
 Food
 Entertainment
-Place
+Places
 
 Use visual cues such as objects, people, settings, and activities to infer intent.
 Confidence scores should reflect how strongly the image suggests each intent.
