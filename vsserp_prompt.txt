@@ -13,7 +13,7 @@ If the image relates to entertainment (e.g. movies, concerts), use the name of t
 Output format:
 
 [
-  {"Intent": "Places", "confidence": 0.95, "serp_query": "Maldives"},
+  {"Intent": "Places", "confidence": 0.95, "serp_query": "Maldives place"},
   {"Intent": "Travel", "confidence": 0.80, "serp_query": "AI123 flight"},
   {"Intent": "Food", "confidence": 0.60, "serp_query": "Italian food"},
   {"Intent": "Health", "confidence": 0.30, "serp_query": "dementia"}
